@@ -281,17 +281,11 @@ Index · HTML
 </div>
  
 <script>
-/* ---------------- password gate ----------------
-   La contraseña real NUNCA se guarda en texto plano aquí: solo su hash SHA-256.
-   Para generar el hash de tu contraseña, abre la consola del navegador (F12) en
-   cualquier página y ejecuta:
- 
-   crypto.subtle.digest('SHA-256', new TextEncoder().encode('tu_contraseña'))
-     .then(b => console.log(Array.from(new Uint8Array(b)).map(x => x.toString(16).padStart(2,'0')).join('')))
- 
-   Copia el resultado y pégalo abajo en EDITOR_PASSWORD_HASH.
-------------------------------------------------- */
-const EDITOR_PASSWORD_HASH = "c006c7e3ab14d686f63524136f1ec7c5e553d839bc01c851e4dc9de2bdbfc58";
+
+
+
+  
+const const EDITOR_PASSWORD = "black";
  
 async function sha256Hex(text){
   const data = new TextEncoder().encode(text);
